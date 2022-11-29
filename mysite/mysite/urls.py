@@ -19,4 +19,5 @@ from blog import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+        re_path('', include("blog.urls")),
 ]
